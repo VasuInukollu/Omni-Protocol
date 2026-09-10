@@ -1,3 +1,14 @@
+# PR107 terminal handover — 2026-09-10
+
+- Independently verified MERGED at 2026-09-10T01:49:22Z: https://github.com/Inukollu/Omni-Protocol/pull/107.
+- Merge SHA: 6d7fded7bc097eb5062ec38878d492224b13fdf2. PR head: bffdfcadde6cba72b35afed64fdeb68279eee0ba. Implementation: e08b0fabc519af3cec8450a6928d6e1919425321.
+- Branch fix/retain-protocol-version; worktree /Users/vasu/Dev/Personal/Omni-Protocol/.worktrees/retain-protocol-version. Retained remote: origin/fix/retain-protocol-version; upstream/main includes merged implementation.
+- Final PR CI Node 20/22/24 passed (34426484965); post-merge CI 34426992500 passed. Local 387 tests and checks previously passed; no new source changes or test reruns needed.
+- Merged source restores OMNI_PROTOCOL_VERSION=1, simplifies cancel to discard, retains stop, strengthens validations and adds HostRecording.announcesToCaller. Actual capture/audio delivery remains host/provider work; history ledger not implemented.
+- Automatic Publish 34426992488 succeeded; npm metadata reports 0.1.82, gitHead equal to merge SHA. NO manual release performed.
+- VISIBLE ADOPTION BLOCKER: direct artifact fetch and npm pack @xema/omni-protocol@0.1.82 both return HTTP 404 for the registry-reported tarball. Metadata publication does not prove installability; do not recommend adoption until artifact download succeeds. Next action: recheck registry availability; release owner investigate if persistent. No speculative republish/version change.
+- Monitor reached MERGED and exited. Terminal notes will be committed and pushed to origin before cleanup. Remove only this dedicated worktree/local branch/runtime after clean tree and remote SHA verification; retain remote branch. Default checkout retains handover. Earlier sections below are historical and superseded by this terminal status.
+
 # Current recording refinements (2026-09-10)
 
 - PR107: https://github.com/Inukollu/Omni-Protocol/pull/107; branch fix/retain-protocol-version.
@@ -54,15 +65,7 @@
 
 - Cleanup completed: dedicated worktree/local branch and monitor runtime files removed. Remote origin/feat/task-recording retained at cac417cc3419b1f6122f13065ada542b342e9a96.
 
-<!-- pr107-monitor:begin -->
-## Current rollback PR monitor
+## PR107 terminal monitor
 
-- Status: **OPEN_PENDING** at 2026-09-10T01:40:58.772172+00:00; action: Await review/CI; no automatic merge.
-- PR: https://github.com/Inukollu/Omni-Protocol/pull/107
-- Command: python3 /Users/vasu/Dev/Personal/Omni-Protocol/.worktrees/retain-protocol-version/.agent-memory/runtime/pr107-monitor.py
-- Name: omni-protocol-pr107-rollback; PID: 2325; PID file: /Users/vasu/Dev/Personal/Omni-Protocol/.worktrees/retain-protocol-version/.agent-memory/runtime/pr107.pid
-- State: /Users/vasu/Dev/Personal/Omni-Protocol/.worktrees/retain-protocol-version/.agent-memory/runtime/pr107.state.json; timestamped log: /Users/vasu/Dev/Personal/Omni-Protocol/.worktrees/retain-protocol-version/.agent-memory/runtime/pr107.log; startup/error output: /Users/vasu/Dev/Personal/Omni-Protocol/.worktrees/retain-protocol-version/.agent-memory/runtime/pr107.process.log
-- Poll interval: 60 seconds; timeout: 24 hours from startup. Next action: respond to CI/review failures, otherwise observe.
-- Terminal conditions: MERGED, CLOSED, AUTH_FAILED, POLL_FAILED after 3 consecutive errors, TIMEOUT or CRASHED.
-- Observe only: never merge, approve, push, delete or remove worktrees. Keep branch/worktree while open; independently verify terminal state, clean tree and retained remote commits before cleanup. Remote deletion requires separate instruction.
-<!-- pr107-monitor:end -->
+Monitor omni-protocol-pr107-rollback (PID 2325, 60s interval, 24h timeout) recorded MERGED at 2026-09-10T01:50:06.412451+00:00 and exited. No ongoing PR monitor is needed. Explicit runtime files are eligible for removal after the clean-tree/remote-reachability gates.
+
