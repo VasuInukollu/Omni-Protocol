@@ -1,3 +1,10 @@
+# npm availability resolved — 2026-09-10T02:06:29.353830+00:00
+
+- npm pack @xema/omni-protocol@0.1.82 succeeded. Previous 404 blocker is resolved.
+- Downloaded artifact SHA512 matches registry integrity; runtime exports OMNI_PROTOCOL_VERSION=1 and declarations include HostRecording.announcesToCaller?: true.
+- Package gitHead: 6d7fded7bc097eb5062ec38878d492224b13fdf2 (PR107 merge). No republish or source change performed. Adoption may proceed against 0.1.82 with the previously supplied recording migration guidance.
+- PR107 remains terminal merged; no open PR monitor needed. Notes-only update retained on origin/fix/retain-protocol-version; temporary notes worktree eligible for cleanup after clean/remote verification.
+
 # PR107 terminal handover — 2026-09-10
 
 - Independently verified MERGED at 2026-09-10T01:49:22Z: https://github.com/Inukollu/Omni-Protocol/pull/107.
