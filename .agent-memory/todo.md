@@ -1,3 +1,10 @@
+# Local branch cleanup — 2026-09-10
+
+- PR105 https://github.com/Inukollu/Omni-Protocol/pull/105 independently verified MERGED. guide/an-adapters-memory HEAD 640ea22094c7a55cdf724cfa4e7b73c2b4a681cd is retained in upstream/main and origin/guide/an-adapters-memory; worktree .1 clean (ignored node_modules only). Eligible for local worktree/branch removal under the user cleanup request; retain remote branch.
+- Preserve docs/repository-handover and Omni-Protocol.2: commit 342623c63a67fba81af49268dde211c234d3ab4d is unpublished and not in any retained remote ref; no PR. Its handover says integration remains pending. Do not discard or publish this work as part of branch cleanup.
+
+Availability handover committed at 0b6b418ba6abc3163cae4025052b429c81f73440; temporary notes worktree/local branch removed, remote retained.
+
 # npm availability resolved — 2026-09-10T02:06:29.353830+00:00
 
 - npm pack @xema/omni-protocol@0.1.82 succeeded. Previous 404 blocker is resolved.
